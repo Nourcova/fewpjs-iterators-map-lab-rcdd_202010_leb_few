@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let tutorials= [
     "what does the this keyword mean?",
     "What is the Contutorialuctor OO pattern?",
@@ -40,3 +41,32 @@ return i.split(' ');
 let UpperMap=mapArr.map(titleCased)
 //console.log(mapArr);
 console.log(UpperMap);
+=======
+const tutorials = [
+  'what does the this keyword mean?',
+  'What is the Contutorialuctor OO pattern?',
+  'implementing Blockchain Web API',
+  'The Test Driven Development Workflow',
+  'What is NaN and how Can we Check for it',
+  'What is the difference between stopPropagation and preventDefault?',
+  'Immutable State and Pure Functions',
+  'what is the difference between == and ===?',
+  'what is the difference between event capturing and bubbling?',
+  'what is JSONP?'
+];
+
+const titleCased = () => {
+  return tutorials
+}
+const titleCased=tutorials.map(function(i){
+return i.split(' ');
+})
+let UpperMap=titleCased.map(i=>{
+    let j=i.map(k=>{
+      let f=k[0].toUpperCase()+k.substring(1)
+       return f;
+    })
+    return j.join(' ');
+})
+//console.log(UpperMap);
+>>>>>>> 68b46f757c6c4ef7962679f2c2ac574bb69989b3
